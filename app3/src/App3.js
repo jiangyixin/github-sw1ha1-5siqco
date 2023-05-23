@@ -13,7 +13,7 @@ const App = () => {
       textAlign:"center",
       backgroundColor:"cyan"
     }}>
-      <h1 >Host App 3</h1>
+      <h1 >Host App 3-6</h1>
       <hr />
       {/* <App1 /> */}
       <hr />

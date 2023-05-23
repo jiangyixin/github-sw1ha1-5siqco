@@ -17,7 +17,7 @@ const App = () => {
         backgroundColor: 'cyan',
       }}
     >
-      <h1>Host App 2 - 1</h1>
+      <h1>Host App 2-6</h1>
       <hr />
       {/* <App1 /> */}
       <hr />

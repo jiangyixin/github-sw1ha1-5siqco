@@ -9,8 +9,8 @@
     "build": "webpack --mode development"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

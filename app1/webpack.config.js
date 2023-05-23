@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index',
   mode: 'development',
   devServer: {
-    open: true,
+    open: false,
     allowedHosts: 'all',
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -44,14 +44,14 @@ module.exports = {
       name: 'app1',
       filename: 'remoteEntry.js',
       remotes: {
-        "mf-app-01": "mfapp01@https://cdn.jsdelivr.net/npm/mf-app-01/dist/remoteEntry.js",
+        // "mf-app-01": "mfapp01@https://cdn.jsdelivr.net/npm/mf-app-01/dist/remoteEntry.js",
         "app2": "app2@http://localhost:9002/remoteEntry.js",
         "app3": "app3@http://localhost:9003/remoteEntry.js",
       },
       // exposes: {
       //   './App': './src/App1.js',
       // },
-      shared: { react: { singleton: false, requiredVersion: "18.2.0" }, 'react-dom': { singleton: true } },
+      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

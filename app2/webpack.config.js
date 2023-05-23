@@ -41,15 +41,15 @@ module.exports = {
       name: 'app2',
       filename: 'remoteEntry.js',
       remotes: {
-        'mf-app-01':
-          'mfapp01@https://cdn.jsdelivr.net/npm/mf-app-01/dist/remoteEntry.js',
+        // 'mf-app-01':
+        //   'mfapp01@https://cdn.jsdelivr.net/npm/mf-app-01/dist/remoteEntry.js',
       },
       exposes: {
         './App': './src/App2.js',
       },
       shared: {
-        react: { singleton: false },
-        'react-dom': { singleton: false },
+        react: { singleton: true },
+        'react-dom': { singleton: true },
       },
     }),
     new UmdPlugin({
